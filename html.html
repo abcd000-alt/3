@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id = "example"></h1>
+
+    <button onclick="displayInfo()">CLICK ME!</button>
+
+    <script>
+       const person = {
+        firstname: 'Hannah',
+        lastname: "Black",
+        age: 14,
+        add: "Pantukan",
+        fullname: function(){
+            return this.firstname + " " + this.lastname;
+        }
+       };
+        
+        function displayInfo(){
+            
+            let fullname = person.fullname();
+            document.getElementById("example").innerHTML = fullname;
+   
+        }
+        let name = 'Carl his name is "Carl"';
+        let length = name.length;
+        let index = name.indexOf('Carl');
+       
+        document.write(index);
+
+    </script>
+
+</body>
+</html>
